@@ -1,0 +1,233 @@
+*{
+    margin:0;
+}
+
+html,body{
+    height:100%;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:#999;
+
+}
+
+p{
+    margin: .5em 0 .5em 0;
+}
+
+header{
+    display:block;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    background-color: #a493c0;
+    padding: 10px;
+}
+
+nav a:visited,
+nav a:link{
+    color:white;
+    text-decoration: none;
+}
+
+
+nav > ul{
+    display: flex;
+    padding: 0;
+}
+
+nav > ul > li{
+    font-family: Georgia, serif;
+    font-size:15px;
+    display: inline-block;
+    list-style:none;
+    
+    margin:0 5px 0 5px;
+}
+
+main {
+    display:block;
+    background-image: url("images/background.png");
+    padding-top: 3em;
+    padding-bottom:3em;
+    min-height:85%;
+}
+
+footer{
+    padding:15px;
+
+}
+
+aside, article{
+    padding:2em;
+}
+
+aside{
+    text-align:center;
+}
+
+
+article {
+    width:75%;
+}
+
+
+@media only screen and (min-width: 768px){
+
+    main{
+        display:flex;
+    }
+
+    aside{
+        margin-left: 2%;
+    }
+
+    .columns-desktop{
+        display:flex;
+    }
+}
+
+h1{
+    font-size: 3em;
+    margin-top: 0.5em;
+}
+
+.banner{
+    max-width: 100%;
+}
+
+.sub-title{
+    background-color: white;
+    font-size: 1.5em;
+    padding:10px;
+
+}
+
+/* PIES */
+
+.pie{
+    width:200px;
+    padding: 10px;
+    margin:10px;
+    background-color:white;
+    border:solid 1px #ccc;
+
+}
+
+.pie img{
+    width: 100%;
+}
+
+.pie .title{
+    font-weight:bold;
+    
+}
+
+.pie .columns{
+    width: 100%;
+}
+
+.pie .price{
+    text-align:left;
+}
+
+.pie .columns div{
+    width:50%;
+}
+
+.pie button{
+    text-align: center;
+    position:relative;
+    background-color: #f6aeae;
+    border: solid 1px #f6aeae;
+    padding:10px;
+    border-radius: 3px;
+    color:white;
+    left:70px
+}
+@media screen and (max-width: 400px) {
+
+    .header{
+        text-align:center;
+        font-style:italic;
+    }
+    .form{
+        text-align:left;
+        font-style:italic;
+        border: solid 1px ;
+        width:100%;
+        border-radius: 20px;
+        background-color: #a493c0;
+        text-align:center;
+        margin-left:10px;
+    }
+    
+    .input-group{
+        margin-bottom:10px;
+        padding-left: 10px;
+        padding-top:10px;
+        padding-right:10px;
+    }
+    
+    .input-group input,
+    .input-group textarea,
+    .input-group select{
+        font-style: italic;
+        padding:10px;
+        border: solid 1px #999;
+        border-radius: 15px;
+        width:90%;
+    
+    }
+    
+    .buttons{
+        padding-left: 10px;
+        padding-bottom: 10px;
+        padding-top:10px;
+        
+    }
+}
+
+@media screen and (min-width: 400px)
+{
+.header{
+    font-style:italic;
+}
+.form{
+    text-align:left;
+    font-style:italic;
+    border: solid 1px ;
+    width:40%;
+    border-radius: 20px;
+    background-color: #a493c0;
+    text-align:center;
+    margin-left:10px;
+}
+
+.input-group{
+    margin-bottom:10px;
+    padding-left: 10px;
+    padding-top:10px;
+    padding-right:10px;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select{
+    padding:10px;
+    border: solid 1px #999;
+    border-radius: 15px;
+    width:90%;
+
+}
+
+
+.buttons{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top:10px;
+    
+}
+}
